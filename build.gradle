@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.10.0'
+}
+
+group 'by.itacademy'
+version '1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation 'org.testng:testng:6.14.3'
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.1'
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.17.1'
+    testImplementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.10.0'
+    testImplementation group: 'io.qameta.allure', name: 'allure-assertj', version: '2.10.0'
+    testImplementation group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.10.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:3.8.1'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.13.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+    implementation group: 'org.json', name: 'json', version: '20220924'
+    implementation 'org.apache.maven.plugins:maven-compiler-plugin:3.8.1'
+}
+
+test {
+    useJUnitPlatform()
+    // Путь для сохранения отчетов Allure
+    systemProperty 'allure.results.directory', './build/allure-results'
+}

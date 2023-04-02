@@ -1,0 +1,6 @@
+package spotify.api.token;
+
+public class GetToken {
+
+    public static final String ACCESS_TOKEN ="BQCFHDqKzAAF2RgEJ-7gzDIpL3RWuRG5LxWrZaVi9eyjaknAyZmL3JzaUjfSIq2UWtW8a-T9nVdh4WlV7GHolvAGFHdHtAyGzqGbeoqjobWK6tU8RJHHiEguR44LmAX2wRvZ2UEr5obq6XPb99eb_BGMTuZyXO9cdHD7fxgqLfNWXW58O3AZrGiRGNFF2orkQPIEhgkxGTJVX-T8dhQvQstjRGmE1XGA-UXbZw0HD33awrN9hC8pNYl4DokB_CWUhVEtTEcX8zTkM6A";
+}
