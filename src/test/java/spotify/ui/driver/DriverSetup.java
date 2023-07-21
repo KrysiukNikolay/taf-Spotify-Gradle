@@ -21,7 +21,7 @@ public class DriverSetup {
      driver = new ChromeDriver(options);
      driver.manage().window().maximize();
      driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10).toMillis(), TimeUnit.MILLISECONDS);
+     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10).toMillis(), TimeUnit.MILLISECONDS);
     }
     return driver;
   }
